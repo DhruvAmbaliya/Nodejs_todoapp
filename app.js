@@ -27,7 +27,7 @@ app.use("/api/v1/users",userRouter);
 app.use("/api/v1/task",taskRouter);
 
 app.get("/",(req,res)=>{
-    res.send("nice working")
+    res.send(path.join(__dirname, '../public/index.html'))
 });
 
 app.use(errorMiddlewares);
